@@ -72,7 +72,8 @@ class NewestProducts extends React.Component {
 
 NewestProducts.propTypes = {
     newestBooks: PropTypes.array.isRequired,
-    bookActions: PropTypes.object.isRequired
+    bookActions: PropTypes.object.isRequired,
+    words: PropTypes.object.isRequired
 };
 function mapStateToProps(state, ownProps) {
     return{

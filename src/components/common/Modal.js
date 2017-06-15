@@ -51,7 +51,7 @@ class Modal extends React.Component {
             return null;
         }
         return (
-            <div className='backdrop-style'>
+            <div className="backdrop-style">
                 <div className={this.props.hide ? 'modal-content' : 'modal-content-back'}>
                     <form onSubmit={this.handleSubmit}>
                         <input className="form-input" name="login" placeholder={this.props.words.login_form.login} type="text" value={this.state.value.login} onChange={this.handleChange}/>

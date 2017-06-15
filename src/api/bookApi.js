@@ -120,7 +120,7 @@ class BookApi {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(Object.assign([], persistedState.books.sort((a, b) => {
-                    return b.soldQuantity - a.soldQuantity
+                    return b.soldQuantity - a.soldQuantity;
                 })));
             }, delay);
         });
@@ -130,7 +130,7 @@ class BookApi {
         return new Promise((resolve, reject) => {
             setTimeout(() => {
                 resolve(Object.assign([], persistedState.books.sort((a, b) => {
-                    return b.id - a.id
+                    return b.id - a.id;
                 })));
             }, delay);
         });
@@ -192,7 +192,7 @@ class BookApi {
 
     static deleteBook(bookId) {
         books.sort((a, b) => {
-            return a.id - b.id
+            return a.id - b.id;
         });
         return new Promise((resolve, reject) => {
             setTimeout(() => {

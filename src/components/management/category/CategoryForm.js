@@ -9,7 +9,7 @@ const CategoryForm = ({hide, isOpen, category, onClose, onUpdate, onSave, isConf
     return (
         <div>
 
-            <div className='backdrop-style categories'>
+            <div className="backdrop-style categories">
                 <div className={hide ? 'modal-content categories' : 'modal-content-back categories'}>
                     <div>{words.header}</div>
                     <hr />

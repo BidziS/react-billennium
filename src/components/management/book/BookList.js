@@ -138,7 +138,8 @@ BookList.propTypes = {
     onEdit: PropTypes.func.isRequired,
     words: PropTypes.object.isRequired,
     isConfirmModalHide: PropTypes.bool.isRequired,
-    onConfirmModalToggle: PropTypes.func.isRequired
+    onConfirmModalToggle: PropTypes.func.isRequired,
+    isConfirmModalOpen: PropTypes.bool.isRequired
 };
 
 export default BookList;

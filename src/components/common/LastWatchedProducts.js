@@ -2,6 +2,8 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as bookActions from '../../actions/bookAction';
+import EmptyList from './EmptyList';
+import ListOfRecentWatchedBooks from './ListOfRecentWatchedBooks';
 
 class LastWatchedProducts extends React.Component {
     constructor(props) {
@@ -53,40 +55,11 @@ class LastWatchedProducts extends React.Component {
         );
     }
 }
-const ListOfRecentWatchedBooks = ({recentWatchedBooks,isOpen}) => {
-    return (
-        <div
-            className={isOpen ? "dropdown-content hover flex-container" : "dropdown-content flex-container"}>
-            {recentWatchedBooks.map(book =>
-                <div key={book.id} className="list-item-container col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    {/*<Link to="/about">*/}
-                    <div className="list-item">
-                        <div className="row">
-                            <div className="col-md-2 col-lg-2 col-xs-2">
-                                <img src={book.cover}
-                                     alt="boohoo" className="img-item-list"/>
-                            </div>
-                            <div className="col-md-10 col-lg-10 col-xs-10 item-description">
-                                <div className="item-list-title">{book.title}</div>
-                            </div>
-                        </div>
-                    </div>
-                    {/*</Link>*/}
-                </div>
-            )}
-        </div>
-    );
-};
-const EmptyList = ({isOpen}) => {
-    return(
-        <div className={isOpen ? "dropdown-content hover flex-container" : "dropdown-content flex-container"}>
-            Brak ostatnio oglądanych
-        </div>
-    );
-};
+
 LastWatchedProducts.propTypes = {
     recentWatchedBooks: PropTypes.array.isRequired,
-    bookActions: PropTypes.object.isRequired
+    bookActions: PropTypes.object.isRequired,
+    words: PropTypes.object.isRequired
 };
 function mapStateToProps(state, ownProps) {
     return {

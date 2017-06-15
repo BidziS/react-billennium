@@ -12,8 +12,6 @@ import {loadUsers} from './actions/userAction';
 import {loadCategories} from './actions/categoryAction';
 import {loadCarriers} from './actions/carrierAction';
 import routes from './routes';
-import './styles/styles.css';
-import './styles/style.scss';
 import './styles/global-styles.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';

@@ -124,7 +124,8 @@ class CountryList extends React.Component {
 
 CountryList.propTypes = {
     countries: PropTypes.array.isRequired,
-    words: PropTypes.object.isRequired
+    words: PropTypes.object.isRequired,
+    currentUser: PropTypes.object.isRequired
 };
 
 function mapStateToProps(state, ownProps) {
