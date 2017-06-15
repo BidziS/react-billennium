@@ -17,61 +17,6 @@ const categories = [
         id: 3,
         name: 'Kryminał'
 
-    },
-    {
-        id: 4,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 5,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 6,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 7,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 8,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 9,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 10,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 11,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 12,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 13,
-        name: 'Kryminał'
-
-    },
-    {
-        id: 14,
-        name: 'Kryminał'
-
     }
 ];
 

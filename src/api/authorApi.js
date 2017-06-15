@@ -5,20 +5,20 @@ const persistedState = localStorage.getItem('state') ? JSON.parse(localStorage.g
 const authors = [
     {
         id: 1,
-        name: 'Wiedźmin. Czas pogardy.',
-        surname: 'Smith',
+        name: 'Andrzej',
+        surname: 'Sapkowski',
         countryId: 1
     },
     {
         id: 2,
-        name: 'Cory',
-        surname: 'Smith',
+        name: 'J. K.',
+        surname: 'Rowling',
         countryId: 2
     },
     {
         id: 3,
-        name: 'Cory',
-        surname: 'Smith',
+        name: 'Stanisław',
+        surname: 'Lem',
         countryId: 3
     }
 ];

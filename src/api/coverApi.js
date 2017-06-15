@@ -5,17 +5,17 @@ const persistedState = localStorage.getItem('state') ? JSON.parse(localStorage.g
 const covers = [
     {
         id: 1,
-        name: 'Ladna'
+        name: 'Twarda'
 
     },
     {
         id: 2,
-        name: 'Brzydka'
+        name: 'Miękka'
 
     },
     {
         id: 3,
-        name: 'Taka se'
+        name: 'Skórzana'
 
     }
 ];

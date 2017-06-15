@@ -10,7 +10,7 @@ const users = [
     {
         id: 2,
         login: 'user',
-        password: 'cudnik',
+        password: '1234',
         role: 'user'
     }
 ];
