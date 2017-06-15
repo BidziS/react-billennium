@@ -77,7 +77,7 @@ App.propTypes = {
 
 function mapStateToProps(state, ownProps) {
     return{
-        loading: state.ajaxcall > 0
+        loading: state.ajaxCallsInProgress > 0
     };
 }
 
