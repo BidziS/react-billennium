@@ -35,7 +35,7 @@ class Logout extends React.Component {
                         <hr />
                         <input type="submit" className="form-button login" value="Tak"/>
                     </form>
-                    <button className="form-button abort">Anuluj</button>
+                    <button className="form-button abort" onClick={this.props.closeLogoutModal}>Anuluj</button>
                 </div>
             </div>
         );
