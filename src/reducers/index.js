@@ -3,7 +3,7 @@ import books from './booksReducer';
 import words from './languageReducer';
 import users from './userReducer';
 import currentUser from './loginReducer';
-import ajaxcall from './ajaxStatusReducer';
+import ajaxCallsInProgress from './ajaxStatusReducer';
 import categories from './categoryReducer';
 import carriers from './carrierReducer';
 import covers from './coverReducer';
@@ -18,7 +18,7 @@ const rootReducer = combineReducers({
     words,
     users,
     currentUser,
-    ajaxcall,
+    ajaxCallsInProgress,
     categories,
     carriers,
     covers,

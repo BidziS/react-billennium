@@ -17,9 +17,10 @@ import './styles/style.scss';
 import './styles/global-styles.scss';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
+import initialState from './reducers/initialState';
 
-const persistedState = localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : {};
-persistedState.ajaxcall = 0;
+const persistedState = localStorage.getItem('state') ? JSON.parse(localStorage.getItem('state')) : initialState;
+persistedState.ajaxCallsInProgress = 0;
 const store = configureStore(persistedState);
 // store.dispatch(loadBooks());
 // store.dispatch(loadWords());
