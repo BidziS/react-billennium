@@ -1,0 +1,25 @@
+.table-container-authors {
+  padding: 0 20px 0 20px;
+}
+
+.authors-list{
+  thead, tbody{
+    tr{
+      display: flex;
+    }
+    th, td{
+      &:first-child{
+        flex: 2 1 0;
+      }
+      &:nth-child(2){
+        flex: 2 1 0;
+      }
+      &:nth-child(3){
+        flex: 1 1 0;
+      }
+      &:last-child{
+        flex: 1 1 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.table-container-countries {
+  padding: 0 200px 0 200px;
+}
+
+.country-list{
+  thead, tbody{
+    tr{
+      display: flex;
+    }
+    th, td{
+      flex: 1 1 0;
+
+      flex-direction: column;
+      &:first-child{
+        flex: 2 1 0;
+      }
+      &:last-child{
+        flex: 1 1 0;
+      }
+
+    }
+  }
+}
