@@ -12,7 +12,7 @@ const BookDetails = ({book, onClose, show, hide, authors, categories, covers, ca
         return (
             <div>
                 <div className="backdrop-style categories">
-                    <div className={hide ? 'modal-content categories' : 'modal-content-back categories'}>
+                    <div className={hide ? 'modal-content books' : 'modal-content-back books'}>
                         <div>{words.book_details.header}</div>
                         <hr />
                         <form readOnly >

@@ -168,6 +168,14 @@ html, body {
       float: left;
     }
   }
+  &.books {
+    max-width: 500px;
+    height: 92%;
+    overflow-y: auto;
+    label {
+      float: left;
+    }
+  }
   &.error {
     width: 400px;
   }
@@ -353,5 +361,17 @@ html, body {
     border: 1px solid black;
     color: black;
 
+  }
+}
+@media (min-height: 1200px) {
+  .modal-content {
+    &.books {
+      max-width: 500px;
+      height: auto;
+      overflow-y: auto;
+      label {
+        float: left;
+      }
+    }
   }
 }

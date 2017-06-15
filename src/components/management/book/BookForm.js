@@ -14,9 +14,8 @@ const BookForm = ({
     }
     return (
         <div>
-
             <div className="backdrop-style categories">
-                <div className={hide ? 'modal-content categories' : 'modal-content-back categories'}>
+                <div className={hide ? 'modal-content books' : 'modal-content-back books'}>
                     <div>{words.header}</div>
                     <hr />
                     <form id="0">
